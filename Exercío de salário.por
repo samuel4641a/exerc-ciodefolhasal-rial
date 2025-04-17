@@ -18,7 +18,7 @@ programa {
     desconto_ir=salario_bruto*0.11
     desconto_INSS=salario_bruto*0.08
     desconto_sindicato=salario_bruto*0.05
-    total_descontos = desconto_ir + desconto_INSS + desconto_sindicato
+    total_descontos = - desconto_ir - desconto_INSS - desconto_sindicato
     salario_liquido=salario_bruto + total_descontos
 
     escreva("\n--------folha de pagamento--------")
